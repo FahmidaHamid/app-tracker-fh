@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router";
-import Home from "../components/Home/Home";
-import Base from "../components/Base/Base";
-import BasicError from "../components/Error/BasicError";
-import AllApps from "../components/AllApps/AllApps";
-import InstalledApps from "../components/Installed/InstalledApps";
-import AppNotFoundError from "../components/Error/AppNotFoundError";
-import AppDetails from "../components/AppDetails/AppDetails";
+import Home from "../pages/Home/Home";
+import Base from "../pages/Base/Base";
+import BasicError from "../pages/Error/BasicError";
+import AllApps from "../pages/AllApps/AllApps";
+import InstalledApps from "../pages/Installed/InstalledApps";
+import AppNotFoundError from "../pages/Error/AppNotFoundError";
+import AppDetails from "../pages/AppDetails/AppDetails";
 
 const router = createBrowserRouter([
   {

@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
 .active-link {
   text-decoration: underline;
 }
