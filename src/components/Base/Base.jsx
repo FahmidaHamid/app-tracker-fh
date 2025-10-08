@@ -6,11 +6,11 @@ import NavBar from "../Header/NavBar";
 
 const Base = () => {
   return (
-    <div className="noto-sans-400 flex flex-col mx-auto mx-w-[100vw]">
+    <div className="flex flex-col mx-auto mx-w-[100vw]">
       <div>
         <NavBar />
       </div>
-      <div className="min-h-screen">
+      <div className="min-h-[660px]">
         <Outlet></Outlet>
       </div>
       <div>

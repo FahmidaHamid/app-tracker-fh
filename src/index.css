@@ -1,20 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
-.noto-sans-400 {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
 * {
   box-sizing: border-box;
-  
 }
+
 .active-link {
-  font-weight: 700;
   text-decoration: underline;
 }
-  
