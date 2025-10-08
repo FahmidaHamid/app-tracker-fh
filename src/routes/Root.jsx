@@ -13,9 +13,16 @@ const router = createBrowserRouter([
     Component: Base,
     errorElement: <BasicError />,
     children: [
-      { index: true, Component: Home },
+      {
+        index: true,
+        Component: Home,
+        HydrateFallback: () => <h1>Loading</h1>,
+        loader: () => fetch("./best-three.json"),
+      },
       {
         path: "all-apps",
+        HydrateFallback: () => <h1>Loading All Apps...</h1>,
+        loader: () => fetch("./data-all.json"),
         Component: AllApps,
       },
       {

@@ -59,7 +59,7 @@ const Header = () => {
         </div>
 
         <NavLink className="btn bg-[#E6E6FA] rounded-2xl">
-          <img className="max-h-[30px]" src={logo} alt="" srcset="" />
+          <img className="max-h-[30px]" src={logo} alt="" />
           <span className="text-xl font-bold text-[#632EE3]">Hero.IO</span>
         </NavLink>
       </div>

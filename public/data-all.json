@@ -1,0 +1,542 @@
+[
+  {
+    "image": "https://i.postimg.cc/JhTjfpHZ/flat-design-atheism-logo-template-23-2149248382.avif",
+    "title": "Quantum Task Manager",
+    "companyName": "Future Tech Inc.",
+    "id": 101,
+    "description": "A revolutionary productivity app that uses quantum computing to organize your tasks. Features include a minimalist design, cross-platform syncing, and AI-driven task prioritization.",
+    "size": 75,
+    "reviews": 1250,
+    "ratingAvg": 4.5,
+    "downloads": 560000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 125 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/N0LKHBLm/astro.jpg",
+    "title": "Astro Explorer",
+    "companyName": "Stellar Games",
+    "id": 102,
+    "description": "An immersive space exploration game where you can discover new planets, build your own starship, and trade with alien civilizations. Stunning graphics and a captivating storyline.",
+    "size": 150,
+    "reviews": 2400,
+    "ratingAvg": 4.1,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/nzbnhJmf/chespantry.jpg",
+    "title": "Chef's Pantry",
+    "companyName": "Gastronomy Labs",
+    "id": 103,
+    "description": "The ultimate recipe and meal-planning app. Discover new dishes, create shopping lists, and follow step-by-step cooking instructions. Includes a large database of international cuisine.",
+    "size": 60,
+    "reviews": 800,
+    "ratingAvg": 4.8,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 180 },
+      { "name": "5 star", "count": 540 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/v80CPym4/zenmeditation.jpg",
+    "title": "Zen Meditation",
+    "companyName": "Mindful Apps",
+    "id": 104,
+    "description": "Guided meditation and sleep stories to help you relax and improve your focus. Track your progress and achieve inner peace with a variety of courses.",
+    "size": 90,
+    "reviews": 3500,
+    "ratingAvg": 4.9,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 3200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/LXcDWxGn/pixel-painter.jpg",
+    "title": "Pixel Painter",
+    "companyName": "Creative Studios",
+    "id": 105,
+    "description": "A fun and simple pixel art editor for all skill levels. Create and share your pixelated masterpieces with a thriving online community.",
+    "size": 45,
+    "reviews": 950,
+    "ratingAvg": 4.6,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 700 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/mDB2S4gt/fitness-tracker.png",
+    "title": "Fitness Tracker Pro",
+    "companyName": "Health Metrics",
+    "id": 106,
+    "description": "Track your workouts, monitor your heart rate, and analyze your fitness progress. Syncs with all major wearable devices.",
+    "size": 110,
+    "reviews": 5100,
+    "ratingAvg": 4.7,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/HWJs46pt/code-companion.jpg",
+    "title": "Code Companion",
+    "companyName": "DevTools Co.",
+    "id": 107,
+    "description": "A powerful and lightweight code editor for multiple programming languages. Includes syntax highlighting, auto-completion, and a built-in terminal.",
+    "size": 180,
+    "reviews": 1500,
+    "ratingAvg": 4.3,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/zXjML1sr/travel-buddy.jpg",
+    "title": "Travel Buddy",
+    "companyName": "Wanderlust Tech",
+    "id": 108,
+    "description": "Plan your next adventure with this all-in-one travel app. Discover hidden gems, book hotels, and create personalized itineraries.",
+    "size": 85,
+    "reviews": 3200,
+    "ratingAvg": 4.4,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 2200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/25p4r10f/music-mixer.png",
+    "title": "Music Mixer",
+    "companyName": "Beat Makers",
+    "id": 109,
+    "description": "Create your own music with a simple and intuitive interface. Includes a library of loops, effects, and virtual instruments.",
+    "size": 220,
+    "reviews": 750,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/4xpYvBQS/lang-learn.png",
+    "title": "Language Learner",
+    "companyName": "Polyglot Solutions",
+    "id": 110,
+    "description": "Learn a new language with interactive lessons, speaking exercises, and games. Supports over 50 languages.",
+    "size": 95,
+    "reviews": 6800,
+    "ratingAvg": 4.6,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 4450 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/j2JxxS8m/photo-editor.png",
+    "title": "Photo Editor Plus",
+    "companyName": "Artistic Apps",
+    "id": 111,
+    "description": "Professional-grade photo editing tools, filters, and effects. Easy to use for both beginners and experts.",
+    "size": 125,
+    "reviews": 9200,
+    "ratingAvg": 4.7,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 6600 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/qvpNL2D3/home-budget-planner.png",
+    "title": "Home Budget Planner",
+    "companyName": "Financial Tools LLC",
+    "id": 112,
+    "description": "Track your spending, set budgets, and achieve your financial goals. Syncs securely with your bank accounts.",
+    "size": 65,
+    "reviews": 4100,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 750 },
+      { "name": "5 star", "count": 3100 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/ZYrYMCdw/game-of-thrones-trivia.jpg",
+    "title": "Game of Thrones Trivia",
+    "companyName": "Fanatic Trivia",
+    "id": 113,
+    "description": "Test your knowledge of the Seven Kingdoms with thousands of questions. Compete against friends and unlock new achievements.",
+    "size": 55,
+    "reviews": 1100,
+    "ratingAvg": 3.9,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/wvY8XQFW/pocket-dictionary.png",
+    "title": "Pocket Dictionary",
+    "companyName": "Word Wizards",
+    "id": 114,
+    "description": "A comprehensive, offline dictionary with millions of words, definitions, and pronunciations. Perfect for students and writers.",
+    "size": 40,
+    "reviews": 1800,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/rsphxdX6/recipe-finder.png",
+    "title": "Recipe Finder",
+    "companyName": "Meal Prep Masters",
+    "id": 115,
+    "description": "Find and save recipes from around the web. Filter by ingredients you have on hand and dietary restrictions.",
+    "size": 70,
+    "reviews": 2300,
+    "ratingAvg": 4.6,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/QCbJ4jD5/digital-journal.jpg",
+    "title": "Digital Journal",
+    "companyName": "Memory Keepers",
+    "id": 116,
+    "description": "A private digital journal to capture your thoughts and memories. Features include password protection, photo attachments, and a mood tracker.",
+    "size": 50,
+    "reviews": 2800,
+    "ratingAvg": 4.9,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/yYDDrV7B/vector-creator.jpg",
+    "title": "Vector Creator",
+    "companyName": "Shape Shifters",
+    "id": 117,
+    "description": "Create stunning vector graphics with this easy-to-use design tool. Export in multiple formats for web and print.",
+    "size": 185,
+    "reviews": 1100,
+    "ratingAvg": 4.3,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/XY0nc3Jm/live-weather.jpg",
+    "title": "Weather Live",
+    "companyName": "Forecast Corp.",
+    "id": 118,
+    "description": "Accurate, real-time weather forecasts with beautiful animations and live radar maps. Stay ahead of the weather.",
+    "size": 70,
+    "reviews": 15000,
+    "ratingAvg": 4.6,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 10050 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/4Nvx0njw/podcast-player.png",
+    "title": "Podcast Player",
+    "companyName": "Audio Universe",
+    "id": 119,
+    "description": "A simple and powerful podcast app with smart features, offline listening, and easy episode management.",
+    "size": 60,
+    "reviews": 3800,
+    "ratingAvg": 4.7,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/k5RrkpB5/expense-manager.png",
+    "title": "Expense Manager",
+    "companyName": "SpendSmart",
+    "id": 120,
+    "description": "Track your daily expenses, create reports, and visualize your spending patterns. Helps you save money and stay on budget.",
+    "size": 48,
+    "reviews": 5500,
+    "ratingAvg": 4.8,
+    "downloads": 3800000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/ZRPQmtZJ/sudoku-master.png",
+    "title": "Sudoku Master",
+    "companyName": "Puzzle Pros",
+    "id": 121,
+    "description": "A classic Sudoku game with multiple difficulty levels and daily challenges. Simple and relaxing gameplay.",
+    "size": 30,
+    "reviews": 1900,
+    "ratingAvg": 4.5,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/MTtYtWqj/galaxy-wallpaper.jpg",
+    "title": "Galaxy Wallpaper",
+    "companyName": "Cosmic Creations",
+    "id": 122,
+    "description": "A collection of beautiful and high-resolution galaxy wallpapers for your phone. New images added weekly.",
+    "size": 80,
+    "reviews": 600,
+    "ratingAvg": 4.4,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 350 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/9QtwyLW9/mindful-journal.webp",
+    "title": "Mindful Journal",
+    "companyName": "Soulful Apps",
+    "id": 123,
+    "description": "Guided journaling prompts to help you reflect, practice gratitude, and improve mental clarity. A companion for your daily wellness journey.",
+    "size": 55,
+    "reviews": 3000,
+    "ratingAvg": 4.9,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 2650 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/rmbJRqc6/ultimate-chess.jpg",
+    "title": "Ultimate Chess",
+    "companyName": "Grandmaster Games",
+    "id": 124,
+    "description": "Play chess online against friends or against the AI. Features multiple difficulty settings and a robust tutorial.",
+    "size": 75,
+    "reviews": 4500,
+    "ratingAvg": 4.6,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 950 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/SRhnvPfS/photo-gallary-pro.webp",
+    "title": "Photo Gallery Pro",
+    "companyName": "Digital Canvas",
+    "id": 125,
+    "description": "Organize and view your photos with a powerful, feature-rich gallery app. Includes advanced sorting and album creation.",
+    "size": 55,
+    "reviews": 600,
+    "ratingAvg": 4.5,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 130 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/sfTz88ch/smart-home-system.avif",
+    "title": "Smart Home Control",
+    "companyName": "Connected Living",
+    "id": 126,
+    "description": "Control all your smart home devices from a single app. Compatible with a wide range of brands and platforms.",
+    "size": 85,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/0jbBhtkW/cooking-video-vlog.jpg",
+    "title": "Recipe Video Guides",
+    "companyName": "Culinary Clips",
+    "id": 127,
+    "description": "Step-by-step video tutorials for thousands of recipes. Learn new cooking skills from professional chefs.",
+    "size": 110,
+    "reviews": 1900,
+    "ratingAvg": 4.6,
+    "downloads": 1400000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/gk3CpTyC/numerology-collage-concept-23-2150061748.avif",
+    "title": "Daily Horoscope",
+    "companyName": "Cosmic Guides",
+    "id": 128,
+    "description": "Your daily horoscope, personalized readings, and astrological insights. Follow the stars and find your path.",
+    "size": 40,
+    "reviews": 2500,
+    "ratingAvg": 4.1,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1050 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/yd9PRwNz/240170583-vpn-icon-in-flat-color-style-virtual-private-network-internet-security.jpg",
+    "title": "Secure VPN",
+    "companyName": "Privacy Shield",
+    "id": 129,
+    "description": "Protect your online privacy and secure your internet connection with this fast and reliable VPN service.",
+    "size": 65,
+    "reviews": 3200,
+    "ratingAvg": 4.5,
+    "downloads": 2600000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 2100 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/KzrTxFzR/istockphoto-1075471118-612x612.jpg",
+    "title": "Book Reader",
+    "companyName": "Digital Library",
+    "id": 130,
+    "description": "An e-book reader with a vast library of free and paid books. Customize your reading experience with different fonts and themes.",
+    "size": 75,
+    "reviews": 4500,
+    "ratingAvg": 4.8,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 3400 }
+    ]
+  }
+]

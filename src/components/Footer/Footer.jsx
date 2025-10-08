@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../../assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center bg-[#C3B1E1] text-white p-10">
       <aside>
-        <img className="max-h-[64px]" src={logo} alt="" srcset="" />
+        <img className="max-h-[64px]" src={logo} alt="" />
         <p className="text-xl font-bold">
           HERO. IO
           <br />

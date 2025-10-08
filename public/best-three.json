@@ -1,0 +1,56 @@
+[
+  {
+    "image": "https://i.postimg.cc/v80CPym4/zenmeditation.jpg",
+    "title": "Zen Meditation",
+    "companyName": "Mindful Apps",
+    "id": 104,
+    "description": "Guided meditation and sleep stories to help you relax and improve your focus. Track your progress and achieve inner peace with a variety of courses.",
+    "size": 90,
+    "reviews": 3500,
+    "ratingAvg": 4.9,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 3200 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/mDB2S4gt/fitness-tracker.png",
+    "title": "Fitness Tracker Pro",
+    "companyName": "Health Metrics",
+    "id": 106,
+    "description": "Track your workouts, monitor your heart rate, and analyze your fitness progress. Syncs with all major wearable devices.",
+    "size": 110,
+    "reviews": 5100,
+    "ratingAvg": 4.7,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://i.postimg.cc/qvpNL2D3/home-budget-planner.png",
+    "title": "Home Budget Planner",
+    "companyName": "Financial Tools LLC",
+    "id": 112,
+    "description": "Track your spending, set budgets, and achieve your financial goals. Syncs securely with your bank accounts.",
+    "size": 65,
+    "reviews": 4100,
+    "ratingAvg": 4.8,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 750 },
+      { "name": "5 star", "count": 3100 }
+    ]
+  }
+]

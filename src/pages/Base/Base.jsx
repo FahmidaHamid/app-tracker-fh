@@ -4,12 +4,10 @@ import Header from "../../components/Header/Header";
 
 const Base = () => {
   return (
-    <div className="flex flex-col mx-auto mx-w-[100vw]">
+    <div className="max-w-[100vw] mx-auto">
       <Header />
 
-      <div className="min-h-[640px]">
-        <Outlet />
-      </div>
+      <Outlet />
 
       <Footer />
     </div>
