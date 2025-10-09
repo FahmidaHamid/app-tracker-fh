@@ -7,17 +7,15 @@ import Loading from "../../components/Loading/Loading";
 const AppLayout = () => {
   const navigation = useNavigation();
 
-  if (navigation.state === "loading") return <Loading />;
   return (
-    <SearchProvider>
-      <div className="max-w-[100vw] mx-auto">
-        <Header />
-
-        <Outlet />
-
-        <Footer />
-      </div>
-    </SearchProvider>
+    // <SearchProvider>
+    <div className="max-w-[100vw] mx-auto">
+      <Header />
+      {navigation.state === "loading" && <Loading />}
+      <Outlet />
+      <Footer />
+    </div>
+    // </SearchProvider>
   );
 };
 

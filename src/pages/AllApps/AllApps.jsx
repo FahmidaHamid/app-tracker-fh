@@ -6,6 +6,11 @@ import DisplayOnlySearched from "./DisplayOnlySearched";
 
 const AllApps = () => {
   const data = useLoaderData();
+
+  if (!data) {
+    ; // Fallback for initial hydration or slow loading
+  }
+
   const [filteredAppList, setFilteredAppList] = useState(data);
 
   const onSearch = (value) => {

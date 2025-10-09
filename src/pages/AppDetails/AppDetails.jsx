@@ -5,6 +5,7 @@ import { addToWishlist } from "../../utilities/handleSome";
 import { NavLink } from "react-router";
 import Swal from "sweetalert2";
 import { useState } from "react";
+import AppRatingChart from "./AppRatingChart";
 
 const AppDetails = () => {
   const [isInstalled, setIsInstalled] = useState(false);
@@ -13,6 +14,7 @@ const AppDetails = () => {
   console.log(id);
   const productData = useLoaderData();
   console.log(productData);
+  
   const navigate = useNavigate();
 
   const showSwal = () => {
@@ -51,13 +53,21 @@ const AppDetails = () => {
     ]
   }
   */
+  const transformedData = theProduct.ratings.map((ratedItem) => {
+    return {
+      name: ratedItem.name,
+      count: ratedItem.count,
+    };
+  });
+  console.log(transformedData);
+
   const handleClick = () => {
     navigate(-1);
   };
 
-  const handleWishlist = (bookid) => {
+  const handleWishlist = (productId) => {
     //console.log(bookid);
-    addToWishlist(bookid);
+    addToWishlist(productId);
     setIsInstalled(true);
     showSwal();
   };
@@ -73,7 +83,7 @@ const AppDetails = () => {
             Back
           </button>
         </div>
-        <div className="hero bg-base-200 min-h-[60vh]">
+        <div className="hero bg-base-200 min-h-[30vh]">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={theProduct.image}
@@ -110,6 +120,7 @@ const AppDetails = () => {
                 </button>
               }
             </div>
+            <AppRatingChart dataToManipulate={transformedData} />
           </div>
         </div>
       </div>
