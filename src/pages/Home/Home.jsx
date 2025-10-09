@@ -13,7 +13,7 @@ const Home = () => {
       <Bandana />
       <BestProducts products={products} />
       <div className="flex flex-1 items-center justify-center p-4">
-        <NavLink to="./all-apps">
+        <NavLink to="all-apps">
           <button className="btn btn-accent bg-purple-200 text-2xl p-5">
             Show All of our Apps
           </button>

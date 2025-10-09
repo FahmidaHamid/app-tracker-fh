@@ -1,13 +1,17 @@
-import React from "react";
+//import React, { useEffect, useLocation, useState } from "react";
 import { NavLink } from "react-router";
 import logo from "../../assets/logo.png";
 import { FaGithub } from "react-icons/fa";
+//import { useSearch } from "../SearchContext/SearchContext";
 
 const Header = () => {
+  //const { resetSearch } = useSearch();
+
   const links = (
     <>
       <NavLink
         to="/"
+        //onClick={resetSearch}
         className={({ isActive }) => (isActive ? "active-link" : "")}
       >
         <li className="m-2 p-1">Home</li>
@@ -15,6 +19,7 @@ const Header = () => {
 
       <NavLink
         to="all-apps"
+        //onClick={resetSearch}
         className={({ isActive }) => (isActive ? "active-link" : "")}
       >
         <li className="m-2 p-1">Apps</li>
@@ -22,6 +27,7 @@ const Header = () => {
 
       <NavLink
         to="installed-apps"
+        //onClick={resetSearch}
         className={({ isActive }) => (isActive ? "active-link" : "")}
       >
         <li className="m-2 p-1">Installed Apps</li>
@@ -58,7 +64,7 @@ const Header = () => {
           </ul>
         </div>
 
-        <NavLink className="btn bg-[#E6E6FA] rounded-2xl">
+        <NavLink to="/" className="btn bg-[#E6E6FA] rounded-2xl">
           <img className="max-h-[30px]" src={logo} alt="" />
           <span className="text-xl font-bold text-[#632EE3]">Hero.IO</span>
         </NavLink>

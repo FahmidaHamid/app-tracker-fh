@@ -1,16 +1,18 @@
 import Footer from "../../components/Footer/Footer";
 import { Outlet } from "react-router";
 import Header from "../../components/Header/Header";
-
+import { SearchProvider } from "../../components/SearchContext/SearchContext";
 const Base = () => {
   return (
-    <div className="max-w-[100vw] mx-auto">
-      <Header />
+    <SearchProvider>
+      <div className="max-w-[100vw] mx-auto">
+        <Header />
 
-      <Outlet />
+        <Outlet />
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </SearchProvider>
   );
 };
 

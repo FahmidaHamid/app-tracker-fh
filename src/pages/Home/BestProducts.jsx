@@ -10,8 +10,8 @@ const BestProducts = ({ products }) => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="grid flex-1 sm:grid-cols-1 md:grid-cols-3 gap-10 items-center justify-center">
-        {products.map((p, index) => (
-          <Product key={index} aProduct={p} />
+        {products.map((p) => (
+          <Product key={p.id} aProduct={p} />
         ))}
       </div>
     </div>
