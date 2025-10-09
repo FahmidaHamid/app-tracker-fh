@@ -32,34 +32,28 @@ const removeFromWishlist = (id) => {
   localStorage.setItem("wishList", data);
 };
 
-const getMarkedlist = () => {
-  const storedMarkedList = localStorage.getItem("markedList");
+// const getMarkedlist = () => {
+//   const storedMarkedList = localStorage.getItem("markedList");
 
-  if (storedMarkedList) {
-    const storedMarkedListData = JSON.parse(storedMarkedList);
-    return storedMarkedListData;
-  } else {
-    return [];
-  }
-};
+//   if (storedMarkedList) {
+//     const storedMarkedListData = JSON.parse(storedMarkedList);
+//     return storedMarkedListData;
+//   } else {
+//     return [];
+//   }
+// };
 
-const addToMarkedList = (id) => {
-  //console.log(id);
+// const addToMarkedList = (id) => {
+//   //console.log(id);
 
-  const storedMarkedListData = getMarkedlist();
-  if (storedMarkedListData.includes(parseInt(id))) {
-    console.log("already included to your marked list");
-  } else {
-    storedMarkedListData.push(id);
-    const data = JSON.stringify(storedMarkedListData);
-    localStorage.setItem("markedList", data);
-  }
-};
+//   const storedMarkedListData = getMarkedlist();
+//   if (storedMarkedListData.includes(parseInt(id))) {
+//     console.log("already included to your marked list");
+//   } else {
+//     storedMarkedListData.push(id);
+//     const data = JSON.stringify(storedMarkedListData);
+//     localStorage.setItem("markedList", data);
+//   }
+// };
 
-export {
-  addToMarkedList,
-  getWishlist,
-  getMarkedlist,
-  addToWishlist,
-  removeFromWishlist,
-};
+export { getWishlist, addToWishlist, removeFromWishlist };

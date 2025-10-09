@@ -3,7 +3,9 @@ import { NavLink } from "react-router";
 import logo from "../../assets/logo.png";
 import { FaGithub } from "react-icons/fa";
 //import { useSearch } from "../SearchContext/SearchContext";
-
+import { IoHomeOutline } from "react-icons/io5";
+import { RiApps2AddFill } from "react-icons/ri";
+import { MdOutlineInstallMobile } from "react-icons/md";
 const Header = () => {
   //const { resetSearch } = useSearch();
 
@@ -14,7 +16,11 @@ const Header = () => {
         //onClick={resetSearch}
         className={({ isActive }) => (isActive ? "active-link" : "")}
       >
-        <li className="m-2 p-1">Home</li>
+        <li className="m-2 p-1">
+          <div className="flex flex-1 items-center justify-center gap-1">
+            <IoHomeOutline /> Home
+          </div>
+        </li>
       </NavLink>
 
       <NavLink
@@ -22,7 +28,12 @@ const Header = () => {
         //onClick={resetSearch}
         className={({ isActive }) => (isActive ? "active-link" : "")}
       >
-        <li className="m-2 p-1">Apps</li>
+        <li className="m-2 p-1">
+          <div className="flex flex-1 items-center justify-center gap-1">
+            <RiApps2AddFill />
+            Apps
+          </div>
+        </li>
       </NavLink>
 
       <NavLink
@@ -30,7 +41,12 @@ const Header = () => {
         //onClick={resetSearch}
         className={({ isActive }) => (isActive ? "active-link" : "")}
       >
-        <li className="m-2 p-1">Installed Apps</li>
+        <li className="m-2 p-1">
+          <div className="flex flex-1 items-center justify-center gap-1">
+            <MdOutlineInstallMobile />
+            Installed Apps
+          </div>
+        </li>
       </NavLink>
     </>
   );

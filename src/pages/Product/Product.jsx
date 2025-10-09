@@ -1,17 +1,7 @@
 import { GiRoundStar } from "react-icons/gi";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { NavLink } from "react-router";
-/*
-"image": "https://example.com/images/app1_icon.png",
-    "title": "Quantum Task Manager",
-    "companyName": "Future Tech Inc.",
-    "id": 101,
-    "description": "A revolutionary productivity app that uses quantum computing to organize your tasks. Features include a minimalist design, cross-platform syncing, and AI-driven task prioritization.",
-    "size": 75,
-    "reviews": 1250,
-    "ratingAvg": 4.5,
 
-*/
 import "./Product.css";
 
 const Product = ({ aProduct }) => {

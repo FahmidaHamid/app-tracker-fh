@@ -1,9 +1,10 @@
 import React from "react";
-import { useRouteError, Link } from "react-router";
+import { useRouteError, Link, useLocation } from "react-router";
 import appNotFound from "../../assets/App-Error.png";
+
 const AppNotFoundError = () => {
   const error = useRouteError();
-
+  const location = useLocation();
   return (
     <div>
       <>
@@ -21,7 +22,7 @@ const AppNotFoundError = () => {
               <img src={appNotFound} alt="" />
             </figure>
             <div className="p-10">
-              <Link to={"/"}>
+              <Link to="/all-apps" state={{ from: location.pathname }}>
                 <button className="btn bg-purple-300 text-black hover:bg-purple-600 hover:text-white">
                   Let's Get Back to Home
                 </button>

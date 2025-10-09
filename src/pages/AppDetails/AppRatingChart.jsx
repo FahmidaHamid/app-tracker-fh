@@ -19,6 +19,8 @@ const AppRatingChart = ({ dataToManipulate }) => {
       <ResponsiveContainer width="100%" height="100%">
         <BarChart width={150} height={40} data={dataToManipulate}>
           <XAxis dataKey="name" />
+          <Tooltip />
+          <Legend />
           <Bar
             dataKey="count"
             fill="#8884d8"

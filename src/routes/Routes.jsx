@@ -7,7 +7,6 @@ import InstalledApps from "../pages/InstalledApps/InstalledApps";
 import AppNotFoundError from "../pages/Error/AppNotFoundError";
 import AppDetails from "../pages/AppDetails/AppDetails";
 import Loading from "../components/Loading/Loading";
-//import Product from "../pages/Product/Product";
 
 const router = createBrowserRouter([
   {
@@ -19,14 +18,14 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
         HydrateFallback: () => {
-          <Loading />;
+          return <Loading />;
         },
         loader: () => fetch("./best-three.json"),
       },
       {
         path: "all-apps",
         HydrateFallback: () => {
-          <Loading />;
+          return <Loading />;
         },
         loader: () => fetch("data-all.json"),
         Component: AllApps,
@@ -35,7 +34,7 @@ const router = createBrowserRouter([
         path: "detailed-app/:id",
         Component: AppDetails,
         HydrateFallback: () => {
-          <Loading />;
+          return <Loading />;
         },
         loader: () => fetch("data-all.json"),
         errorElement: <AppNotFoundError />,
@@ -44,7 +43,7 @@ const router = createBrowserRouter([
         path: "installed-apps",
         Component: InstalledApps,
         HydrateFallback: () => {
-          <Loading />;
+          return <Loading />;
         },
         loader: () => fetch("data-all.json"),
       },

@@ -1,8 +1,5 @@
-import React from "react";
-import { CiStar } from "react-icons/ci";
 import { useParams, useNavigate, useLoaderData } from "react-router";
-import { addToWishlist } from "../../utilities/handleSome";
-import { NavLink } from "react-router";
+import { addToWishlist, getWishlist } from "../../utilities/handleSome";
 import Swal from "sweetalert2";
 import { useState } from "react";
 import AppRatingChart from "./AppRatingChart";
@@ -11,10 +8,10 @@ const AppDetails = () => {
   const [isInstalled, setIsInstalled] = useState(false);
 
   const { id } = useParams();
-  console.log(id);
+  //console.log(id);
   const productData = useLoaderData();
-  console.log(productData);
-  
+  //console.log(productData);
+
   const navigate = useNavigate();
 
   const showSwal = () => {
@@ -28,10 +25,16 @@ const AppDetails = () => {
     });
   };
 
+  const currentWishList = getWishlist();
+  console.log("App Details: current wishlist: ", currentWishList);
+  if (currentWishList.includes(id)) {
+    setIsInstalled(true);
+  }
+
   const theProduct = productData.find((d) => {
     return d.id === parseInt(id);
   });
-  console.log(theProduct);
+  //console.log(theProduct);
 
   /*
 {
@@ -59,14 +62,13 @@ const AppDetails = () => {
       count: ratedItem.count,
     };
   });
-  console.log(transformedData);
+  //console.log(transformedData);
 
   const handleClick = () => {
     navigate(-1);
   };
 
   const handleWishlist = (productId) => {
-    //console.log(bookid);
     addToWishlist(productId);
     setIsInstalled(true);
     showSwal();
@@ -116,7 +118,7 @@ const AppDetails = () => {
                   disabled={isInstalled}
                   className="btn bg-gradient-to-br from-purple-500 to-blue-500 p-6 m-3"
                 >
-                  Install Now
+                  <span className="text-white">Install Now</span>
                 </button>
               }
             </div>
