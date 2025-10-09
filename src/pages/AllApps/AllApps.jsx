@@ -32,7 +32,9 @@ const AllApps = () => {
             </h1>
             <SearchBar onSearch={onSearch} />
           </div>
-          <DisplayOnlySearched itemsToDisplay={filteredAppList} />
+          <div className="max-w-screen">
+            <DisplayOnlySearched itemsToDisplay={filteredAppList} />
+          </div>
         </div>
       </div>
     </>

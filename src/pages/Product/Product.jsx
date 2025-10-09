@@ -18,7 +18,7 @@ const Product = ({ aProduct }) => {
   console.log(aProduct.id);
   return (
     <NavLink to={`../detailed-app/${aProduct.id}`}>
-      <div className="card pcard bg-purple-100 w-92 shadow-md">
+      <div className="card pcard bg-purple-100 w-92 shadow-md flex-1">
         <figure>
           <img
             className="rounded-xl border-4 m-4 h-[240px] w-[8/10] "

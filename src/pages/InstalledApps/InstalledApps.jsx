@@ -4,9 +4,13 @@ import { useLoaderData, useNavigation } from "react-router";
 import Loading from "../../components/Loading/Loading";
 import Swal from "sweetalert2";
 const InstalledApps = () => {
+
   const [installedItems, setInstalledItems] = useState([]);
+
   const data = useLoaderData();
+
   const { state } = useNavigation();
+
   console.log(state);
 
   const showSwal = () => {
@@ -28,6 +32,13 @@ const InstalledApps = () => {
     const onlyWished = data.filter((d) => convertedWishList.includes(d.id));
     setInstalledItems(onlyWished);
   }, []);
+
+  // const handleUninstalled = ({ id }) => {
+  //   removeFromWishlist(id);
+  //   const wishList = getWishlist();
+  //   //const convertedWishList = wishList.map((m) => parseInt(m));
+  //   setInstalledItems(wishList);
+  // };
 
   return (
     <>
@@ -52,7 +63,7 @@ const InstalledApps = () => {
                   takes upto {item.size} MB
                 </p>
                 <div className="flex flex-1 items-center justify-end-safe">
-                  <button
+                  <button 
                     onClick={() => {
                       removeFromWishlist(item.id);
                       showSwal();

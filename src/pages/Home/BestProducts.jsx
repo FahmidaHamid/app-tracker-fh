@@ -9,7 +9,7 @@ const BestProducts = ({ products }) => {
       <p className="text-xl m-3">
         Explore All Trending Apps on the Market developed by us
       </p>
-      <div className="grid flex-1 sm:grid-cols-1 md:grid-cols-3 gap-10 items-center justify-center">
+      <div className="grid flex-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center justify-center">
         {products.map((p) => (
           <Product key={p.id} aProduct={p} />
         ))}

@@ -26,13 +26,10 @@ const removeFromWishlist = (id) => {
   //console.log(id);
 
   const storedWishListData = getWishlist();
-  let indexToRemove = storedWishListData.indexOf(parseInt(id));
-  if (indexToRemove !== -1) {
-    storedWishListData.splice(indexToRemove, 1);
-    console.log("uninstalled successfully");
-  } else {
-    console.log("doesn't exist");
-  }
+  let newList = storedWishListData.filter((number) => number !== parseInt(id));
+  console.log("uninstalled successfully");
+  const data = JSON.stringify(newList);
+  localStorage.setItem("wishList", data);
 };
 
 const getMarkedlist = () => {
