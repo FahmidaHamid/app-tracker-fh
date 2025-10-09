@@ -4,8 +4,11 @@ import { useParams, useNavigate, useLoaderData } from "react-router";
 import { addToWishlist } from "../../utilities/handleSome";
 import { NavLink } from "react-router";
 import Swal from "sweetalert2";
+import { useState } from "react";
 
 const AppDetails = () => {
+  const [isInstalled, setIsInstalled] = useState(false);
+
   const { id } = useParams();
   console.log(id);
   const productData = useLoaderData();
@@ -20,8 +23,6 @@ const AppDetails = () => {
       imageWidth: 400,
       imageHeight: 200,
       imageAlt: "Custom image",
-      // didOpen: () => setSwalShown(true),
-      // didClose: () => setSwalShown(false),
     });
   };
 
@@ -57,6 +58,7 @@ const AppDetails = () => {
   const handleWishlist = (bookid) => {
     //console.log(bookid);
     addToWishlist(bookid);
+    setIsInstalled(true);
     showSwal();
   };
 
@@ -66,7 +68,7 @@ const AppDetails = () => {
         <div className="p-5">
           <button
             onClick={handleClick}
-            className="btn btn-active bg-purple-500 hover:bg-purple-800 text-xl text-white"
+            className="btn btn-active bg-purple-500 hover:bg-purple-800 text-xl text-white "
           >
             Back
           </button>
@@ -108,7 +110,8 @@ const AppDetails = () => {
               {
                 <button
                   onClick={() => handleWishlist(theProduct.id)}
-                  className="btn bg-gradient-to-br from-purple-500 to-blue-500 p-6 m-3 "
+                  disabled={isInstalled}
+                  className="btn bg-gradient-to-br from-purple-500 to-blue-500 p-6 m-3"
                 >
                   Download
                 </button>

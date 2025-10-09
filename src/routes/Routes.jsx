@@ -3,7 +3,7 @@ import Home from "../pages/Home/Home";
 import Base from "../pages/AppLayout/AppLayout";
 import BasicError from "../pages/Error/BasicError";
 import AllApps from "../pages/AllApps/AllApps";
-import InstalledApps from "../pages/Installed/InstalledApps";
+import InstalledApps from "../pages/InstalledApps/InstalledApps";
 import AppNotFoundError from "../pages/Error/AppNotFoundError";
 import AppDetails from "../pages/AppDetails/AppDetails";
 import Loading from "../components/Loading/Loading";
@@ -43,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "installed-apps",
         Component: InstalledApps,
+        HydrateFallback: () => {
+          <Loading />;
+        },
+        loader: () => fetch("data-all.json"),
       },
     ],
   },
