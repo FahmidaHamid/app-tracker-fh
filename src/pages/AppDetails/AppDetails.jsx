@@ -1,6 +1,9 @@
 import React from "react";
 import { CiStar } from "react-icons/ci";
 import { useParams, useNavigate, useLoaderData } from "react-router";
+import { addToWishlist } from "../../utilities/handleSome";
+import { NavLink } from "react-router";
+import Swal from "sweetalert2";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -8,6 +11,19 @@ const AppDetails = () => {
   const productData = useLoaderData();
   console.log(productData);
   const navigate = useNavigate();
+
+  const showSwal = () => {
+    Swal.fire({
+      title: "Sweet!",
+      text: "Added to your wishlist :)",
+      imageUrl: "https://unsplash.it/400/200",
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: "Custom image",
+      // didOpen: () => setSwalShown(true),
+      // didClose: () => setSwalShown(false),
+    });
+  };
 
   const theProduct = productData.find((d) => {
     return d.id === parseInt(id);
@@ -34,19 +50,28 @@ const AppDetails = () => {
     ]
   }
   */
+  const handleClick = () => {
+    navigate(-1);
+  };
+
+  const handleWishlist = (bookid) => {
+    //console.log(bookid);
+    addToWishlist(bookid);
+    showSwal();
+  };
 
   return (
     <>
       <div className="bg-blue-200 p-10 m-10">
         <div className="p-5">
           <button
-            onClick={() => navigate(-1)}
+            onClick={handleClick}
             className="btn btn-active bg-purple-500 hover:bg-purple-800 text-xl text-white"
           >
             Back
           </button>
         </div>
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-base-200 min-h-[60vh]">
           <div className="hero-content flex-col lg:flex-row">
             <img
               src={theProduct.image}
@@ -80,13 +105,15 @@ const AppDetails = () => {
                   Average Rating: <b>{theProduct.ratingAvg}</b>
                 </p>
               </div>
-              {/* <button
-              onClick={() => handleWishlist(aBook.bookId)}
-              className="btn btn-accent p-6 m-3 "
-            >
-              Add to Wishlist
-            </button>
-            <button
+              {
+                <button
+                  onClick={() => handleWishlist(theProduct.id)}
+                  className="btn bg-gradient-to-br from-purple-500 to-blue-500 p-6 m-3 "
+                >
+                  Download
+                </button>
+              }
+              {/*<button
               onClick={() => handleMark(aBook.bookId)}
               className="btn btn-secondary p-6 m-3"
             >

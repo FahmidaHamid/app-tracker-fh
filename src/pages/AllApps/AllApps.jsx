@@ -1,17 +1,15 @@
 import { useLoaderData } from "react-router";
-
 import SearchBar from "../../components/SearchBar/SearchBar";
 import { useState } from "react";
 import Banner from "./Banner";
 import DisplayOnlySearched from "./DisplayOnlySearched";
-import ResetSearch from "./ResetSearch";
 
 const AllApps = () => {
   const data = useLoaderData();
   const [filteredAppList, setFilteredAppList] = useState(data);
 
   const onSearch = (value) => {
-    console.log("input field clicked...", value);
+    //console.log("input field clicked...", value);
 
     if ((value === "") | (value === "all")) {
       setFilteredAppList([...data]);

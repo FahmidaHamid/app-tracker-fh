@@ -11,7 +11,7 @@ const Banner = () => {
         Team
       </h1>
       <p className="text-xl m-3">
-        Explore All Apps on the Market developed by us. We code for Millions
+        Explore All Apps on the Market developed by us. We code for Millions.
       </p>
     </>
   );

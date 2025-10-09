@@ -1,9 +1,8 @@
 import React from "react";
-import { useRouteError, useNavigate } from "react-router";
+import { useRouteError, Link } from "react-router";
 import appNotFound from "../../assets/App-Error.png";
 const AppNotFoundError = () => {
   const error = useRouteError();
-  const navigate = useNavigate();
 
   return (
     <div>
@@ -15,19 +14,18 @@ const AppNotFoundError = () => {
               {error.status} Error
             </h1>
             <h1 className="text-4xl font-extrabold text-red-500">
-              Sorry! An unexpected error has occured
+              Sorry! The App with your provided id doesn't exist.
             </h1>
             {/* <p>{error.statusText || error.message}</p> */}
             <figure>
               <img src={appNotFound} alt="" />
             </figure>
             <div className="p-10">
-              <button
-                onClick={() => navigate(-1)}
-                className="btn bg-purple-300 text-black hover:bg-purple-600 hover:text-white"
-              >
-                Back
-              </button>
+              <Link to={"/"}>
+                <button className="btn bg-purple-300 text-black hover:bg-purple-600 hover:text-white">
+                  Let's Get Back to Home
+                </button>
+              </Link>
             </div>
           </div>
         </div>

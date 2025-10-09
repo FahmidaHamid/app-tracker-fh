@@ -1,14 +1,15 @@
 import basicNotFound from "../../assets/error-404.png";
-import { useNavigate, useRouteError } from "react-router";
+import { Link, useRouteError } from "react-router";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 const BasicError = () => {
   const error = useRouteError();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   //console.log(error);
   return (
     <>
+      <Header></Header>
       <div className="h-[5/12]">
         <div className="flex flex-col items-center p-20">
           <h1 className="text-7xl font-extrabold text-purple-500">
@@ -22,15 +23,18 @@ const BasicError = () => {
             <img src={basicNotFound} alt="" />
           </figure>
           <div className="p-10">
-            <button
-              onClick={() => navigate(-1)}
-              className="btn bg-purple-300 text-black hover:bg-purple-600 hover:text-white"
-            >
-              Back
-            </button>
+            <Link to={"/"}>
+              <button
+                // onClick={() => navigate(-1)}
+                className="btn bg-purple-300 text-black hover:bg-purple-600 hover:text-white"
+              >
+                Back to Home
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

@@ -19,14 +19,18 @@ const Hero = () => {
           smarter, and more enjoyable for you!
         </p>
         <div className="buttons flex flex-row justify-center items-center gap-1.5">
-          <button className="btn btn-accent bg-purple-300">
-            <PiGooglePlayLogoLight color="purple-900" size={24} />
-            Google Play
-          </button>
-          <button className="btn btn-accent bg-purple-300">
-            <FaAppStore color="purple-900" size={24} />
-            App Store
-          </button>
+          <a href="https://play.google.com/store/games/" target="_blank">
+            <button className="btn btn-accent bg-purple-300">
+              <PiGooglePlayLogoLight color="purple-900" size={24} />
+              Google Play
+            </button>
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <button className="btn btn-accent bg-purple-300">
+              <FaAppStore color="purple-900" size={24} />
+              App Store
+            </button>{" "}
+          </a>
         </div>
       </div>
       <div>
