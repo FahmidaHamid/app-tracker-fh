@@ -18,7 +18,7 @@ const AppDetails = () => {
   const showSwal = () => {
     Swal.fire({
       title: "Sweet!",
-      text: "Added to your wishlist :)",
+      text: "Added to your installed app list :)",
       imageUrl: "https://unsplash.it/400/200",
       imageWidth: 400,
       imageHeight: 200,
@@ -88,14 +88,7 @@ const AppDetails = () => {
                 <b>Description:</b>
                 {theProduct.description}
               </p>
-              {/* <div className="p-6 flex gap-5">
-                <p>
-                  <b>Tags:</b>
-                </p>
-                {aBook.tags.map((t) => (
-                  <p>{`#${t}`}</p>
-                ))}
-              </div> */}
+
               <div className="p-6 flex flex-col gap-5">
                 <p>
                   No of Reviews: <b>{theProduct.reviews}</b>
@@ -113,15 +106,9 @@ const AppDetails = () => {
                   disabled={isInstalled}
                   className="btn bg-gradient-to-br from-purple-500 to-blue-500 p-6 m-3"
                 >
-                  Download
+                  Install Now
                 </button>
               }
-              {/*<button
-              onClick={() => handleMark(aBook.bookId)}
-              className="btn btn-secondary p-6 m-3"
-            >
-              Mark as Mark
-            </button> */}
             </div>
           </div>
         </div>

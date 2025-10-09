@@ -3,7 +3,7 @@ import React from "react";
 const Loading = () => {
   return (
     <div>
-      <h1>Loading All Apps...</h1>
+      <h1>Loading, please wait...</h1>
       <span className="loading loading-bars loading-xs"></span>
       <span className="loading loading-bars loading-sm"></span>
       <span className="loading loading-bars loading-md"></span>

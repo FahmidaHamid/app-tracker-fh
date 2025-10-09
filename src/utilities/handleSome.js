@@ -22,6 +22,19 @@ const addToWishlist = (id) => {
   }
 };
 
+const removeFromWishlist = (id) => {
+  //console.log(id);
+
+  const storedWishListData = getWishlist();
+  let indexToRemove = storedWishListData.indexOf(parseInt(id));
+  if (indexToRemove !== -1) {
+    storedWishListData.splice(indexToRemove, 1);
+    console.log("uninstalled successfully");
+  } else {
+    console.log("doesn't exist");
+  }
+};
+
 const getMarkedlist = () => {
   const storedMarkedList = localStorage.getItem("markedList");
 
@@ -46,4 +59,10 @@ const addToMarkedList = (id) => {
   }
 };
 
-export { addToMarkedList, getWishlist, getMarkedlist, addToWishlist };
+export {
+  addToMarkedList,
+  getWishlist,
+  getMarkedlist,
+  addToWishlist,
+  removeFromWishlist,
+};
