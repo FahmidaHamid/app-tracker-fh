@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { getWishlist, removeFromWishlist } from "../../utilities/handleSome";
+import { getWishlist } from "../../utilities/handleSome";
 import { useLoaderData, useNavigation } from "react-router";
 import Loading from "../../components/Loading/Loading";
 import Swal from "sweetalert2";
+import InstalledDetails from "./InstalledDetails";
 const InstalledApps = () => {
-
   const [installedItems, setInstalledItems] = useState([]);
 
   const data = useLoaderData();
@@ -13,16 +13,16 @@ const InstalledApps = () => {
 
   console.log(state);
 
-  const showSwal = () => {
-    Swal.fire({
-      title: "Sorry to see you go",
-      text: "Uninstalled :)",
-      imageUrl: "https://unsplash.it/400/200",
-      imageWidth: 400,
-      imageHeight: 200,
-      imageAlt: "Custom image",
-    });
-  };
+  // const showSwal = () => {
+  //   Swal.fire({
+  //     title: "Sorry to see you go",
+  //     text: "Uninstalled :)",
+  //     imageUrl: "https://unsplash.it/400/200",
+  //     imageWidth: 400,
+  //     imageHeight: 200,
+  //     imageAlt: "Custom image",
+  //   });
+  // };
 
   useEffect(() => {
     const wishList = getWishlist();
@@ -42,7 +42,7 @@ const InstalledApps = () => {
 
   return (
     <>
-      {state === "loading" && <Loading />}
+      {(state === "loading") | (state === "submitting") && <Loading />}
       <div>
         <h1 className="text-3xl font-bold m-3">
           So far, you have installed ...
@@ -51,8 +51,8 @@ const InstalledApps = () => {
         <ul>
           {installedItems.map((item) => (
             <li key={item.id}>
-              <div className="border-2 rounded-2xl bg-amber-50 m-3 p-3 flex flex-1">
-                {/* <p>{item.id}</p> */}
+              {/* <div className="border-2 rounded-2xl bg-amber-50 m-3 p-3 flex flex-1">
+                <p>{item.id}</p>
                 <img
                   className="rounded-xl border-4 m-4 h-[100px]"
                   src={item.image}
@@ -63,7 +63,7 @@ const InstalledApps = () => {
                   takes upto {item.size} MB
                 </p>
                 <div className="flex flex-1 items-center justify-end-safe">
-                  <button 
+                  <button
                     onClick={() => {
                       removeFromWishlist(item.id);
                       showSwal();
@@ -73,7 +73,8 @@ const InstalledApps = () => {
                     Uninstall
                   </button>
                 </div>
-              </div>
+              </div> */}
+              <InstalledDetails item={item} />
             </li>
           ))}
         </ul>
